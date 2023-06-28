@@ -1,6 +1,6 @@
-# Flask init app
+# Flask init app + Docker + celery
 
- Flask init app
+ Flask init app + Docker + celery
 
 
 ## Install
@@ -40,4 +40,10 @@ sudo -E docker-compose  up --build
 
 ```
 python -m pytest -vv
+```
+
+# Celery - queue
+
+```
+celery -A modules.queue.celery:celery worker  -Q queue-test --loglevel=INFO --without-heartbeat=True --without-gossip=True --without-mingle=True
 ```
