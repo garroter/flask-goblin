@@ -1,6 +1,6 @@
 # Invoice proxy python
 
-Invoice proxy Flask
+ Flask init app
 
 
 ## Install
